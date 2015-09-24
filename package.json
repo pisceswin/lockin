@@ -1,0 +1,22 @@
+{
+  "name": "lockin",
+  "version": "0.1.0",
+  "description": "smart lock",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/pisceswin/lockin.git"
+  },
+  "keywords": [
+    "lock"
+  ],
+  "author": "pisces",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pisceswin/lockin/issues"
+  },
+  "homepage": "https://github.com/pisceswin/lockin#readme"
+}
