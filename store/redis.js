@@ -13,7 +13,7 @@ function Store(option) {
 
     this.CONNECTING = false;
     var redisOpt = option.redis || {};
-    this.client = redis.createClient(redisOpt.host, redisOpt.port, redisOpt.opt);
+    this.client = redis.createClient(redisOpt.port, redisOpt.host, redisOpt.opt);
     this.client.on('connect', function () {
         _self.CONNECTING = true;
         _self.log.info('redis connection');
