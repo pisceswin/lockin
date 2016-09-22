@@ -12,7 +12,8 @@ function Store(option) {
     this.log = option.log;
 
     this.CONNECTING = false;
-    this.client = redis.createClient(option.redis);
+    var redisOpt = option.redis || {};
+    this.client = redis.createClient(redisOpt.port, redisOpt.host, redisOpt.opt);
     this.client.on('connect', function () {
         _self.CONNECTING = true;
         _self.log.info('redis connection');
